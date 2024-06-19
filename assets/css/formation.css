@@ -1,0 +1,137 @@
+#training {
+    color: var(--colorText);
+    font-size: 1.1em;
+    margin-top: -.1rem;
+}
+
+#container {
+    width: 80vw;
+    height: 85vh;
+    display: grid;
+    grid-template-columns: 48%, 48%;
+    grid-template-rows: 48%, 48%;
+
+    #cda {
+        width: 48%;
+        height: 48%;
+        display: flex;
+        flex-direction: column;
+        border: 1px solid var(--colorTitle);
+        border-radius: 5px;
+        padding: .2rem;
+
+        .head {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+            .img {
+                width: 8rem;
+                height: 5rem;
+                background-image: url(/images/formations/logoWCS.svg);
+                background-size: cover;
+                background-position: center;
+                margin-top: 1.5rem;
+                margin-left: 1.5rem;
+                margin-right: .5rem;
+                margin-bottom: 2rem;
+            }
+        }
+            
+        .details {
+            width: 70%;
+            height: 45%;
+
+            h2, h3, p {
+            line-height: 175%;
+            font-family: var(--fontBigTitle);
+            color: var(--colorTitle);
+            margin-bottom: .2rem;
+            margin-left: .2rem;
+        }
+    }
+
+    .languages {
+        width: 95%;
+        height: 10rem;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 4rem, 4rem, 4rem, 4rem;
+        grid-template-rows: 3rem, 3rem;
+        gap: .5rem;
+        
+        logo {
+            padding: .2rem;
+            width: 4rem;
+            height: 3rem;
+        }
+
+        .one {
+            grid-column: 1/1;
+            grid-row: 1;
+        }
+
+        .two {
+            grid-column: 2;
+            grid-row: 1;
+        }
+
+        .three {
+            grid-column: 3;
+            grid-row: 1;
+        }
+
+        .four {
+            grid-column: 4;
+            grid-row: 1;
+        }
+
+        .five {
+            grid-column: 1/1;
+            grid-row: 2;
+        }
+
+        .six {
+            grid-column: 2;
+            grid-row: 2;
+        }
+
+        .seven {
+            grid-column: 3;
+            grid-row: 2;
+        }
+
+        .eight {
+            grid-column: 4;
+            grid-row: 2;
+        }
+
+        img {
+            width: 2rem;
+            height: 2rem;
+            margin-left: 25%;
+            margin-bottom: .1rem;
+        }
+
+        p {
+            color: var(--colorTitle);
+            text-align: center;
+            margin-bottom: .2rem;
+        }
+    }
+    
+    .more {
+        width: ;
+    }
+
+    a {
+        width: 7rem;
+        color: var(--colorTitle);
+        text-decoration: none;
+    }    
+    }
+}
+#fsjs, #php, #abd {
+    display: none;
+}

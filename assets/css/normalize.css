@@ -1,0 +1,147 @@
+/**************** VARIABLES ***************/
+
+@font-face {
+    font-family: 'Cinzel';
+    src: url(../fonts/Cinzel/Cinzel-Regular.otf);
+}
+
+@font-face {
+    font-family: 'Cinzel-bold';
+    src: url(../fonts/Cinzel/Cinzel-Bold.otf);
+}
+
+@font-face {
+    font-family: 'Prociono';
+    src: url(../fonts/Prociono/Prociono-Regular.otf);
+}
+
+:root {
+    --fontBigTitle: 'Cinzel-bold';
+    --fontSmallTitle: 'Cinzel';
+    --fontText: 'Prociono';
+    --colorTitle: rgb(218, 165, 32);
+    --colorText: #f1f1f1;
+    --colorBg: rgb(85,84,84);
+}
+
+/**************** RESET ***************/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 62.5%;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--colorBg);
+    color: var(--colorText);
+}
+
+/**************** HEADER ***************/
+header {
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--colorTitle);
+    font-family: var(--fontSmallTitle);
+    font-size: .9rem;
+
+    h1 {
+        text-align: left;
+        font-size: 1.5em;
+        padding-left: 1rem;
+    }
+
+    ul {
+        display: flex;
+        justify-content: space-evenly;
+        margin-right: .5rem;
+
+        a {
+            text-decoration: none;
+            align-items: center;
+            color: var(--colorTitle);
+            font-family: var(--fontSmallTitle);
+            font-size: .9rem;
+        }
+
+        li {
+            list-style-type: none;
+            margin: 0 .5rem;
+        }        
+    }
+}
+
+/**************** MAIN ***************/
+main {
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--fontText);
+    color: var(--colorText);
+
+    /**************** ASIDE ***************/
+    #links {
+        width: 10vw;
+        height: 40vh;
+        padding: .5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        border: 1px solid var(--colorTitle);
+        border-radius: .1rem;
+        
+        a {
+            text-decoration: none;
+            color: var(--colorTitle);
+            padding: .5rem;
+            font-size: .8em;
+            cursor: pointer;            
+        }
+
+        .btn {
+            border: 1px solid var(--colorTitle);
+            font-size: 1.2em;
+            text-align: center;
+        }
+    }
+
+    #navSec {
+        width: 15vw;
+        height: 40vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        
+        border-radius: .1rem;
+        position: relative;
+        right: 0;
+
+        a {
+            text-decoration: none;
+            width: 100%;
+            height: 3rem;
+            border: 1px solid var(--colorTitle);
+            text-align: center;
+            font-size: 1.5em;
+            color: var(--colorTitle);
+            padding-top: 10%;
+
+        }
+    }
+}
+
+
+
+
+
+
+
