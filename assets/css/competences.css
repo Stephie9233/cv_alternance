@@ -1,0 +1,154 @@
+@media screen and (min-width: 320px) {  
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        width: 100vw;
+        height: 74vh;
+        position: relative;
+    }
+
+    main h1 {
+        color: var(--colorSubtitle);
+        font-family: var(--fontBigTitle);
+        font-size: 4.6vh;
+        margin-top: 1.2rem;
+        margin-bottom: 3.2rem;
+        text-align: center;
+        width: 100%;
+    }
+
+    main section {
+        position: absolute;
+        top: 8vh;
+        left: 0;
+        width: 100vw;
+        height: 70vh;
+        background-color: var(--colorBG);
+        margin-bottom: 2.5rem;
+        overflow-y: auto;
+    }    
+    
+    main section article {
+        width: 250px;
+        height: 25vh;
+        margin: 1rem auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid var(--colorSubtitle);
+        background-color: #13801810;
+        border-radius: 5px;
+        margin-bottom: 2rem;
+    }
+
+    main section article h2 {
+        width: 100%;
+        text-align: left;
+        font-size: 1.3em;
+        color: var(--colorSmallTitle);
+        font-family: sans-serif;
+        margin: .5rem 0 1.5rem 1.5rem;
+    }
+
+    main section article .skills {
+        width: 70%;
+        height: 85%;
+        display: grid;
+        gap: .3rem;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr, 1fr;
+    }
+
+    main section article .skills .logo {
+        height: 4vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    main section article .skills .logo img {
+        width: 2.5rem;
+        height: 2.5rem;
+        margin: 0 auto;
+    }
+
+    main section article .skills .logo p {
+        width: 100%;
+        text-align: center;
+        font-size: 1em;
+        color: var(--colorSmallTitle);
+    }
+
+    main section article h2 {
+        color: var(--colorTitle);
+        font-family: var(--fontSmallTitle);
+        font-size: 1.6em;
+        margin-left: 1.2rem;
+        margin-top: .2rem;
+        margin-bottom: 1.2rem;
+    }
+
+    main section article p {
+        color: var(--colorText);
+        font-family: var(--fontText);
+        font-size: 1.2em;
+        margin: .2rem;
+    }
+
+    main section .card .more {
+        width: 35vw;
+        height: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        margin-top: -1rem;
+    }
+
+    main section .card .more a {
+        text-decoration: none;
+        background-color: var(--colorSubtitle);
+        padding: .5rem;
+        color: var(--colorBgMain);
+        font-family: 'MontSerrat';
+    }
+}
+
+@media screen and (min-width: 768px) {
+    main section {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    main section article {
+        width: 320px;
+        height: 300px;
+    }
+
+    main section article .skills {
+        margin-top: 2.5rem;
+    }
+
+    main section article .skills .logo img {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    main section article .skills .logo p {
+        font-size: 2vh;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    main section article {
+        width: 450px;
+        height: 350px;
+    }
+}
