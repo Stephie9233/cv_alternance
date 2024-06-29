@@ -1,0 +1,359 @@
+body {
+    font-family: 'Lucida Sans', sans-serif;
+}
+@media screen and (min-width: 320px) {  
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        width: 100vw;
+        height: 84vh;
+        position: relative;
+    }
+
+    main h1 {
+        color: var(--colorSubtitle);
+        font-family: var(--fontBigTitle);
+        font-size: 4vh;
+        margin-top: 1.2rem;
+        margin-bottom: 1.2rem;
+        text-align: center;
+        width: 100%;
+    }
+
+    main section {
+        position: relative;
+        top: .2rem;
+        left: 0;
+        width: 90vw;
+        height: 100%;
+        margin: .5rem auto;
+        background-color: var(--colorBG);
+        margin-bottom: 2.5rem;
+        overflow-y: auto;
+    }
+           
+    main section p {
+        color: var(--colorText);
+        font-family: var(--fontText);
+        font-size: 1.8vh;
+        margin: .2rem .2rem 2.2rem .2rem;
+        margin-top: .2rem;
+        margin-bottom: 1.2rem;
+    }
+
+    main section article {
+        margin: 2rem 0;
+        width: 100%;
+    }
+
+    main section article h2 {
+        color: var(--colorSubtitle);
+        font-family: var(--fontSmallTitle);
+        font-size: 3vh;
+        margin: .2rem .2rem 1.2rem .2rem;
+        text-align: center;
+    }
+
+    main section article p {
+        color: var(--colorText);
+        font-family: var(--fontText);
+        font-size: 1.4em;
+        margin: .2rem .2rem 2.2rem .2rem;
+    }
+
+    main section article .picture-ctn {
+        width: 100%;
+        height: 3rem;
+        display: flex;
+        margin-left: .2rem;
+        margin-top: -1rem;
+    }
+
+    main section article .picture-ctn .picture {
+        height: 2.5rem;
+        width: 20%;
+        border: 1px solid #d7edd8;
+        cursor: pointer;
+        margin: .2rem auto;
+    }
+
+    main section article .picture-ctn .picture:hover {
+        opacity: .65;
+    }
+
+    main section article .picture-ctn .picture img {
+        height: 2.5rem;
+        width: 100%;        
+    }
+
+    main section article #asas {
+        background-color: var(--colorSubtitle);
+        h1, p {color: white}; 
+        width: 90%;
+        height: 13rem;
+        margin-top: 1.5rem;
+        margin-left: .2rem;
+        border-radius: 5px;      
+    }
+
+    main section article #jma {
+        background-color: rgb(82, 78, 68);
+        h1, p {color: white};
+        width: 90%;
+        height: 14rem;
+        margin-top: 2.5rem;
+        margin-left: .2rem;
+        border-radius: 5px;
+        
+        .btn a {
+            color: rgb(82, 78, 68);
+            cursor: pointer;
+        }
+    }
+
+    main section article #kaamelott {
+        background-color: rgb(26, 16, 2);
+        h1, p {color: rgb(255, 211, 133)};
+        width: 90%;
+        height: 14rem;
+        margin-top: 2.5rem;
+        margin-left: .2rem;
+        border-radius: 5px;
+        
+        .btn a {
+            color: rgb(26, 16, 2);
+            cursor: pointer;
+        }
+    }
+
+    main section article #jackpot {
+        background-color: rgb(252, 241, 187);
+        h1, p {color: rgb(137, 53, 29)};
+        width: 90%;
+        height: 14rem;
+        margin-top: 2.5rem;
+        margin-left: .2rem;
+        border-radius: 5px;
+        
+        .btn a {
+            color: rgb(137, 53, 29);
+            cursor: pointer;
+        }
+    }
+
+    main section article .details-ctn h1 {
+        font-size: 2.5vh;
+        font-family: 'Lucida Sans', sans-serif;
+        font-weight: 700;
+        color: var(--colorHeader);
+        text-align: center;
+        padding: .5rem 0 .2rem 0;
+    }
+
+    main section article .details-ctn p {
+        width: 90%;
+        text-align: left;
+        position: relative;
+        margin: -.4rem 0 0 auto;
+        font-size: 1.1vh;
+        font-family: 'Lucida Sans', sans-serif;
+        color: var(--colorHeader);
+    }
+
+    main section article .details-ctn .languages {
+        height: 3.4rem;
+        width: 75%;
+        margin: 1.2rem auto;
+        display: flex;
+        justify-content: center;
+        align-self: center;
+    }
+
+    main section article .details-ctn .languages .logo {
+        width: 3rem;
+        height: 3.4rem;
+    }
+
+    main section article .details-ctn .languages .logo img {
+        height: 2rem;
+        width: 2.2rem;
+        padding-left: .4rem;
+    }
+
+    main section article .details-ctn .languages .logo p {
+        width: 100%;
+        text-align: center;
+        font-size: 1.2em;
+        margin-top: -.2rem;
+        font-family: sans-serif;
+    }
+
+    main section article .details-ctn .btn {
+        background-color: var(--colorBgMain);
+        padding: .2rem .5rem;
+        margin: .2rem auto;
+        width: fit-content;
+        position: relative;
+        bottom: .5rem;
+    }
+    
+    main section article .details-ctn .btn a {
+        color: var(--colorSubtitle);
+        font-size: 1.2em;
+        font-weight: 700;
+        font-family: sans-serif;
+        text-decoration: none;
+    }
+
+    #dynamic {
+        padding-top: 2rem;
+        margin-bottom: 5rem;
+    }
+
+}
+
+/* @media screen and (min-width: 425px) {
+    #container {
+        width: 90vw;
+
+        #intro, #following {
+            h1, h2 {
+                margin-left: 3rem;
+            }
+
+            p {
+                font-size: 1.35em;
+                margin-left: 3rem;
+                width: 80%;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 550px) {
+    main {
+        display: flex;
+        flex-direction: row;
+        
+        
+        #container {
+            width: 80vw;
+            height: 70vh;
+            margin: 0 auto;
+
+            #intro, #following {
+                h1, h2 {
+                    margin-left: 4.5rem;
+                }
+
+                p {
+                    font-size: 1.35em;
+                    margin-left: 4rem;
+                    width: 80%;
+                }
+            }           
+        }        
+    }
+}
+
+@media screen and (min-width: 650px) {
+    #container {
+        #intro, #following {
+            width: 75vw;
+            h1, h2, p {
+                margin-left: 6.2rem;
+            }
+            
+        }
+    }
+}
+@media screen and (min-width: 768px) {
+    #container {
+        width: 70vw;
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    
+        #intro {
+            width: 80%;
+            height: 70%;
+            margin: 1rem auto;
+            margin-bottom: 1.5rem;
+    
+            #avatar {
+                width: 14rem;
+                height: 14rem;
+                margin: 1.5rem 7rem;
+                border: 3px solid var(--colorTitle);
+                border-radius: 100%;
+            }
+    
+            h1, h2 {
+                color: var(--colorTitle);
+                font-family: var(--fontBigTitle);
+                font-size: 2em;
+                margin: 1rem 0;
+            }
+    
+            p {
+                font-size: 1.5em;
+                font-family: var(--fontText);
+                line-height: 170%;
+                width: 90%;
+                margin-left: .5rem;
+            }
+        }
+    
+        #following {
+            width: 80%;
+            height: 30%;
+            margin: 1rem auto;
+            margin-bottom: 1.5rem;
+    
+            h2 {
+                color: var(--colorTitle);
+                font-family: var(--fontBigTitle);
+                font-size: 2em;
+                margin: 1rem 0;
+            }
+            
+            p {
+                font-size: 1.5em;
+                font-family: var(--fontText);
+                line-height: 170%;
+                width: 90%;
+                margin-left: .5rem;
+                margin-bottom: 5rem;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 920px) {
+    #container {
+        width: 60vw;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    #links{
+        #git, #linkedin {
+            width: 7.5rem;
+            height: 7.5rem;
+        }
+
+        img {
+            width: 4.5rem;
+            margin-left: -1rem;
+        }
+
+        .btn {
+            font-size: 1.8em;
+            width: 18rem;
+        }
+    }
+} */

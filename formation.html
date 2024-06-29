@@ -3,71 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="images/stephie.ico" type="image/x-icon">
-    <link rel="stylesheet" href="assets/css/normalize.css">
-    <link rel="stylesheet" href="assets/css/formation.css">
-    <title>Stéphanie CARTALIER - Formation</title>
+    <link rel="shortcut icon" href="./images/stephie.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/normalize.css">
+    <link rel="stylesheet" href="./assets/css/formation.css">
+    <title>Stéphanie CARTALIER - Formations</title>
 </head>
 <body>
     <header>
         <h1>Stéphanie CARTALIER</h1>
-        <nav id="nav">
-            <ul>
-                <li><a href="index.html"  id="me">Présentation</a></li>
-                <li><a href="formation.html"  id="training">Formation</a></li>
-                <li><a href="competences.html" id="skills">Compétences</a></li>
-                <li><a href="real.html" id="real">Réalisations</a></li>
-            </ul>
+        <nav>
+            <a href="/index.html">A propos</a>
+            <a href="formation.html">Formation</a>
+            <a href="competences.html">Compétences</a>
+            <a href="real.html">Réal</a>
         </nav>
+        <article id="links">
+            <nav>
+                <a href="https://github.com/Stephie9233" id="git" target="_blank">
+                    <img src="/images/header/github.svg" alt="Logo Github">
+                </a>
+                <a href="https://www.linkedin.com/in/st%C3%A9phanie-cartalier-771ab9146/" id="linkedin" target="_blank">
+                    <img src="./images/header/linkedin.svg" alt="Logo Linkedin">
+                </a>
+                <a href="./docs/Stephanie_CARTALIER_Cv_alternance_cda_js.pdf" target="_blank">CV</a>
+                <a href="mailto:stephanie.cartalier@gmail.com">Contact</a>
+            </nav>            
+        </article>
     </header>
-    <main>
-        <aside id="links">
-            <a href="https://github.com/Stephie9233" id="git" target="_blank"><img src="images/header/github.svg" alt="Logo Github"></a>
-            <a href="https://www.linkedin.com/in/st%C3%A9phanie-cartalier-771ab9146/" target="_blank"><img src="images/header/linkedin.svg" alt="Logo Linkedin"></a>
-            <a href="docs/Stephanie_CARTALIER_Cv_alternance_cda_js.pdf" class="btn" target="_blank">CV</a>
-            <a href="mailto:stephanie.cartalier@gmail.com" class="btn">Contact</a>
-        </aside>
-        <section id="container">
-            <article id="cda">
+    <main> 
+        <h1>FORMATIONS</h1>       
+        <section>           
+            <article class="card" id="cda">
                 <article class="head">
-                    <div class="img"></div>
+                    <img src="images/formations/logoWCS.svg" alt="Logo WILD CODE SCHOOL">
                     <article class="details">
                         <h2>CDA Js avancé</h2>
-                       <h3>Sept. 2024 - nov. 2025</h3>
+                       <h3>Oct. 2024 - dec. 2025</h3>
                        <p>Alternance - 1945 h</p>
                     </article>
                 </article>
                 <article class="languages">
-                    <div class="logo one">
-                        <img src="images/competences/html.svg" alt="Logo HTML">
-                        <p>HTML</p>
-                    </div>
-                    <div class="logo two">
-                        <img src="images/competences/css.svg" alt="Logo CSS">
-                        <p>CSS</p>
-                    </div>
-                    <div class="logo three">
-                        <img src="images/competences/Js.svg" alt="Logo Javascript">
+                    <div class="logo">
+                        <img src="images/formations/js.svg" alt="Logo Javascript">
                         <p>Javascript</p>
-                    </div>
-                    <div class="logo four">
-                        <img src="images/competences/mysql.svg" alt="Logo SQL">  
-                        <p>SQL</p>
-                    </div>    
-                    <div class="logo five">
-                        <img src="images/competences/api.svg" alt="Logo Api Rest">
-                        <p>API-REST</p>
-                    </div>
-                    <div class="logo six">
-                       <img src="images/competences/typescript.svg" alt="Logo TypeScript"> 
+                    </div>                    
+                    <div class="logo">
+                       <img src="images/formations/typescript.svg" alt="Logo TypeScript"> 
                        <p>TypeScript</p>
                     </div>
-                    <div class="logo seven">
-                        <img src="images/competences/React.svg" alt="Logo React Js">
+                    <div class="logo">
+                        <img src="images/formations/React.svg" alt="Logo React Js">
                         <p>React.js</p>
                     </div>
-                    <div class="logo eight">
-                        <img src="images/competences/nodejs.svg" alt="Logo Node Js">
+                    <div class="logo">
+                        <img src="images/formations/nodejs.svg" alt="Logo Node Js">
                         <p>Node.js</p>
                     </div>                    
                 </article>
@@ -75,63 +64,103 @@
                     <a href="docs/ProgrammeCdaJs.pdf">Programme</a>
                 </article>
             </article>
-            
-            <article id="php">
+
+            <article class="card" id="php">
                 <article class="head">
-                    <img src="images/formations/logoWCS.svg" alt="Logo Wild Code School">
-                    <article>
+                    <img src="images/formations/logoWCS.svg" alt="Logo WILD CODE SCHOOL">
+                    <article class="details">
                         <h2>POEC PHP</h2>
                        <h3>Avril - juin 2024</h3>
                        <p>Bootcamp 400 h</p>
                     </article>
-                    <article class="languages">
-                        <img src="images/competences/html.svg" alt="Logo HTML">
-                        <img src="images/competences/css.svg" alt="Logo CSS">
-                        <img src="images/competences/Js.svg" alt="Logo Javascript">
-                        <img src="images/competences/mysql.svg" alt="Logo SQL">
-                        <img src="images/competences/php.svg" alt="Logo PHP">
-                        <img src="images/competences/symfony.svg" alt="Logo Symfony">
-                    </article>
+                </article>
+                <article class="languages">
+                    <div class="logo">
+                        <img src="images/formations/sql.svg" alt="Logo SQL">
+                        <p>SQL</p>
+                    </div>                    
+                    <div class="logo">
+                       <img src="images/formations/php.svg" alt="Logo PHP"> 
+                       <p>PHP</p>
+                    </div>
+                    <div class="logo">
+                        <img src="images/formations/composer.svg" alt="Logo Composer">
+                        <p>Composer</p>
+                    </div>
+                    <div class="logo">
+                        <img src="images/formations/symfony.svg" alt="Logo Symfony">
+                        <p>Symfony</p>
+                    </div>                    
+                </article>
+                <article class="more">
                     <a href="docs/poecPhp.pdf">Programme</a>
                 </article>
             </article>
-            <article id="abd">
+            
+            <article class="card" id="abd">
                 <article class="head">
-                    <img src="images/formations/doranco.png" alt="Logo Doranco">
-                    <article>
+                    <img src="images/formations/doranco.png" class="img" alt="Logo WILD CODE SCHOOL">
+                    <article class="details">
                         <h2>Administrateur BDD</h2>
-                       <h3>Sept. - nov. 2022</h3>
-                       <p>Bootcamp - 315 h</p>
+                       <h3>Sept. - Nov. 2022</h3>
+                       <p>Bootcamp 315 h</p>
                     </article>
-                    <article class="languages">
-                        <img src="images/competences/mysql.svg" alt="Logo SQL">
-                        <img src="images/competences/server.svg" alt="Icone serveur">
-                        <img src="images/competences/linux_oracle.svg" alt="Logo Oracle">
-                    </article>
+                </article>
+                <article class="languages">
+                    <div class="logo">
+                        <img src="images/formations/My_SQL.svg" class="logoBig" alt="Logo SQL">
+                    </div>                    
+                    <div class="logo">
+                       <img src="images/formations/SQL_copy.svg" class="logoBig" alt="Logo Microsoft SQL server">
+                    </div>
+                    <div class="logo">
+                        <img src="images/formations/oracle.svg" class="logoBig" alt="Logo Oracle">
+                    </div>                    
+                </article>
+                <article class="moreBl">
                     <a href="docs/FormationABD.pdf">Programme</a>
                 </article>
             </article>
-            <article id="fsjs">
+            
+            <article class="card" id="fsjs">
                 <article class="head">
-                    <img src="images/formations/3wa.png" alt="Logo 3 web Academy">
-                    <article>
-                        <h2>Dev. fullstack JS</h2>
-                       <h3>Sept. - dec. 2021</h3>
-                       <p>Bootcamp - 400 h</p>
+                    <img src="images/formations/3wa.png" class="img" alt="Logo 3w Academy">
+                    <article class="details">
+                        <h2>Dev fullstack JS</h2>
+                       <h3>Sept. - Déc. 2021</h3>
+                       <p>Bootcamp 400 h</p>
                     </article>
-                    <article class="languages">
-                        <img src="images/competences/html.svg" alt="Logo HTML">
-                        <img src="images/competences/css.svg" alt="Logo CSS">
-                        <img src="images/competences/bootstrap_outline.svg" alt="Logo Bootstrap">
-                        <img src="images/competences/Js.svg" alt="Logo Javascript">
-                        <img src="images/competences/mysql.svg" alt="Logo SQL">
-                        <img src="images/competences/api.svg" alt="Logo Api Rest">
-                        <img src="images/competences/React.svg" alt="Logo React Js">
-                        <img src="images/competences/nodejs.svg" alt="Logo Node Js">
-                    </article>
+                </article>
+                <article class="languages" style="overflow: auto;">
+                    <div class="logo">
+                        <img src="images/formations/html.svg" alt="Logo HTML">
+                        <p>HTML</p>
+                    </div>                    
+                    <div class="logo">
+                       <img src="images/formations/css.svg" alt="Logo CSS"> 
+                       <p>CSS</p>
+                    </div>
+                    <div class="logo">
+                        <img src="images/formations/js.svg" alt="Logo Oracle">
+                        <p>Javascript</p>
+                    </div>
+                    <div class="logo">
+                        <img src="images/formations/jquery.svg" alt="Logo Jquery">
+                        <p>jQuery</p>
+                    </div>                    
+                    <div class="logo">
+                       <img src="images/formations/react.svg" alt="Logo React.js"> 
+                       <p>React</p>
+                    </div>
+                    <div class="logo">
+                        <img src="images/formations/nodejs.svg" alt="Logo Node.js">
+                        <p>Node</p>
+                    </div>                     
+                </article>
+                <article class="moreBl">
                     <a href="docs/FSJS_3wa.pdf">Programme</a>
                 </article>
-            </article>
+            </article>           
         </section>
     </main>
 </body>
